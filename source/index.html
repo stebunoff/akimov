@@ -5,98 +5,127 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/cofosans-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Сертификат соответствия</title>
 </head>
 
-<body>
-  <header>
-    <img src="#" alt="Логотип ООО «ТЕХБЕЗОПАСНОСТЬ»>
-    <span>Аккредитованный <br>орган по сертификации</span>
-    <div>
+<body class="body">
+  <header class="container page-header">
+    <div class="logo">
+      <img src="img/logo.svg" width="150" height="18" alt="Логотип ООО «ТЕХБЕЗОПАСНОСТЬ»">
+      <span class="logo-descriptor">Аккредитованный <br>орган по сертификации</span>
+    </div>
+    <div class="accreditation">
       <a href="">RA.RU.11HA65</a>
       <a href="">RA.RU.21HB54</a>
     </div>
     <address>
-      <span><a href=" tel:+74956779678">+7 495 677 9678</a></span>
-    <span><a href="tel:+79636762839">+7 963 676 2839</a></span>
+      <a class="phone" href="tel:+74956779678">+7 495 677 9678</a>
+      <a class="phone" href="tel:+79636762839">+7 963 676 2839</a>
     </address>
   </header>
   <main>
-    <section>
+    <section class="offer">
       <img src="" alt="">
       <hgroup>
-        <h1>Проводим испытания и оформляем сертификаты соответствия на медицинское оборудование</h1>
-        <p>Работаем оперативно и без посредников</p>
+        <h1 class="offer__headline">Проводим испытания и оформляем сертификаты соответствия на медицинское оборудование
+        </h1>
+        <p class="offer__subheadline">Работаем оперативно и без посредников</p>
       </hgroup>
-      <button>Рассчитать стоимость и сроки</button>
-      <div>
-        <img src="" alt="Юрий Акимов">
-        <span>Юрий Акимов</span>
-        <span>Ваш персональный менеджер <br>по сертификации</span>
+      <button class="button">Рассчитать стоимость и сроки</button>
+      <div class="manager">
+        <img src="img/avatar.png" width="74" height="74" alt="Юрий Акимов">
+        <span class="manager__name">Юрий Акимов</span>
+        <span class="manager__job-title">Ваш персональный менеджер <br>по сертификации</span>
       </div>
     </section>
-    <section>
+    <section class="advantages">
       <h2 class="visually-hidden">Преимущества компании</h2>
-      <p>Работаем с 2007 года <br>по всей России</p>
-      <p>5000 юр. лиц получили документы за последние 10 лет</p>
-      <ul>
-        <li>Собственные испытательные лаборатории</li>
-        <li>60 экспертов и инженеров-испытателей в штате</li>
-        <li>Стоимость инспеционного контроля прописываем в договоре и не меняем</li>
-        <li>Оцениваем документы на вероятность отказа до заключения договора и предоплаты</li>
+      <p class="advantages__point"><span class="advantages__point--accent">Работаем с 2007 года</span> <br>по всей
+        России</p>
+      <p class="advantages__point"><span class="advantages__point--accent">5000 юр. лиц</span> получили документы за
+        последние 10 лет</p>
+      <ul class="advantages-list">
+        <li class="advantages-list__item">Собственные испытательные лаборатории</li>
+        <li class="advantages-list__item">60 экспертов и инженеров-испытателей в штате</li>
+        <li class="advantages-list__item">Стоимость инспеционного контроля прописываем в договоре и не меняем</li>
+        <li class="advantages-list__item">Оцениваем документы на вероятность отказа до заключения договора и предоплаты
+        </li>
       </ul>
     </section>
     <section>
       <h2 class="visually-hidden">Типы сертификатов</h2>
-      <ul>
-        <li>Соответствия изделий стандартам ЕС</li>
-        <li>Соответствие изделий стандартам в РФ</li>
-        <li>Соответствия изделий стандартам ЕЭС</li>
+      <ul class="types-list">
+        <li class="types-list__item">Соответствия изделий стандартам ЕС</li>
+        <li class="types-list__item">Соответствие изделий стандартам в РФ</li>
+        <li class="types-list__item">Соответствия изделий стандартам ЕЭС</li>
       </ul>
     </section>
-    <section>
-      <h2>Клиенты нас рекомендуют</h2>
-      <ul>
-        <li>Вариконд</li>
-        <li>Газхолодтехника</li>
-        <li>ЗАО «ДС Контролз»</li>
-        <li>ЗАО «ИЦ АСИ»</li>
-        <li>Пожгазприбор</li>
-        <li>НЭЗ Тайра</li>
-        <li>РИСТ</li>
-        <li>МГК Световые технологии</li>
+    <section class="clients">
+      <h2 class="clients__headline">Клиенты нас рекомендуют</h2>
+      <ul class="clients-list">
+        <li class="clients-list__item"><a href="">Вариконд</a></li>
+        <li class="clients-list__item"><a href="">Газхолодтехника</a></li>
+        <li class="clients-list__item"><a href="">ЗАО «ДС Контролз»</a></li>
+        <li class="clients-list__item"><a href="">ЗАО «ИЦ АСИ»</a></li>
+        <li class="clients-list__item"><a href="">Пожгазприбор</a></li>
+        <li class="clients-list__item"><a href="">НЭЗ Тайра</a></li>
+        <li class="clients-list__item"><a href="">РИСТ</li>
+        <li class="clients-list__item"><a href="">МГК Световые технологии</li>
       </ul>
+      <button class="button button--show-more">Показать ещё</button>
     </section>
-    <section>
-      <h2>За 2 дня бесплатно проверим и оценим ваши документы на вероятность отказа</h2>
-      <button>Заказать обратный звонок</button>
-      <div>
-        <span>Юрий Акимов</span>
-        <span>Ваш персональный менеджер <br>по сертификации</span>
+    <section class="alternative-offer">
+      <h2 class="alternative-offer__headline">За 2 дня бесплатно проверим и оценим ваши документы на вероятность отказа
+      </h2>
+      <button class="button button--alternative">Заказать обратный звонок</button>
+      <div class="manager">
+        <span class="manager__name">Юрий Акимов</span>
+        <span class="manager__job-title">Ваш персональный менеджер <br>по сертификации</span>
       </div>
     </section>
   </main>
   <footer>
-    <div>
-      <img src="#" alt="Логотип ООО «ТЕХБЕЗОПАСНОСТЬ»>
-      <span>Аккредитованный <br>орган по сертификации</span>
+    <div class="logo-text">
+      <img src="img/logo-text.svg" width="150" height="16" alt="Логотип ООО «ТЕХБЕЗОПАСНОСТЬ»">
+      <span class="logo-text__descriptor">Аккредитованный <br>орган по сертификации</span>
     </div>
-        <address><dl>Адрес</dl><dt>Москва,<br> Бауманская 6с2</dt></address>
-        <div><dl>Время работы</dl><dt>Пн-Чт 9-18 <br>Пт 9-17</dt></div>
-        <address><dl>Телефоны</dl><dt><a href=" tel:+74956779678">+7 495 677 9678</a></dt>
-      <dt><a href="tel:+79636762839">+7 963 676 2839</a></dt>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <address class="contacts__item">
+        <dl>
+          <dt class="contacts__name">Адрес</dt>
+          <dd class="contacts__value">Москва,<br> Бауманская 6с2</dd>
+        </dl>
       </address>
-      <address>
-        <dl>Почта</dl>
-        <dt><a href="mailto:ju.akimov@thbz.ru">ju.akimov@thbz.ru</a></dt>
+      <div class="contacts__item">
+        <dl>
+          <dt class="contacts__name">Время работы</dt>
+          <dd class="contacts__value">Пн-Чт 9-18 <br>Пт 9-17</dd>
+        </dl>
+      </div>
+      <address class="contacts__item">
+        <dl>
+          <dt class="contacts__name">Телефоны</dt>
+          <dd class="contacts__value"><a href=" tel:+74956779678">+7 495 677 9678</a></dd>
+          <dd class="contacts__value"><a href="tel:+79636762839">+7 963 676 2839</a></dd>
+        </dl>
       </address>
-      <a href="sitemap.html">Карта сайта</a>
+      <address class="contacts__item">
+        <dl>
+          <dt class="contacts__name">Почта</dt>
+          <dd class="contacts__value"><a href="mailto:ju.akimov@thbz.ru">ju.akimov@thbz.ru</a></dd>
+        </dl>
+      </address>
+    </section>
+    <a class="link" href="sitemap.html">Карта сайта</a>
   </footer>
   <div>
-    <button><span class=""visually-hidden>Закрыть</span></button>
-    <button><span class=""visually-hidden>Влево</span></button>
+    <button><span class="" visually-hidden>Закрыть</span></button>
+    <button><span class="" visually-hidden>Влево</span></button>
     <img src="" alt="">
-    <button><span class=""visually-hidden>Вправо</span></button>
+    <button><span class="" visually-hidden>Вправо</span></button>
   </div>
 </body>
 

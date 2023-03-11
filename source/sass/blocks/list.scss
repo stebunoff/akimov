@@ -1,0 +1,7 @@
+.list {
+  @include list-reset;
+
+  font-size: 16px;
+  line-height: 23px;
+  color: $grey;
+}

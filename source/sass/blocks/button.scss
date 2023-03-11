@@ -1,0 +1,44 @@
+.button {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+
+  background-color: $cta;
+
+  @media (min-width: $desktop-width) {
+    font-size: 13px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &--alternative {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 17px;
+    }
+
+    @media (min-width: $wide-desktop-width) {
+      font-size: 18px;
+    }
+  }
+
+  &--show-more {
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #808080;
+
+    background-color: transparent;
+    border: 1px solid $grey80;
+  }
+}

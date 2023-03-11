@@ -1,0 +1,19 @@
+.clients-list {
+  @include list-reset;
+}
+
+.clients-list__item {
+  font-size: 15px;
+  line-height: 19px;
+  color: $grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}

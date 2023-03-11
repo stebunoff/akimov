@@ -1,0 +1,17 @@
+.clients {}
+
+.clients__headline {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 27px;
+    line-height: 37px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    font-size: 35px;
+    line-height: 44px;
+  }
+}

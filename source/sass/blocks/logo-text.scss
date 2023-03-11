@@ -1,0 +1,11 @@
+.logo-text {}
+
+.logo-text__descriptor {
+  font-size: 14px;
+  line-height: 17px;
+
+  @media (min-width: $wide-desktop-width) {
+    font-size: 15px;
+    line-height: 19px;
+  }
+}

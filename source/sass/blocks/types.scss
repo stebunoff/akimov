@@ -1,0 +1,13 @@
+.types-list {
+  @include list-reset;
+}
+
+.types-list__item {
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
