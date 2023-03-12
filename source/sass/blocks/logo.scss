@@ -1,4 +1,7 @@
-.logo {}
+.logo {
+  display: flex;
+  flex-direction: column;
+}
 
 .logo__descriptor {
   font-size: 13px;

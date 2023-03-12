@@ -1,0 +1,31 @@
+.contacts-list {
+  margin: 0;
+}
+
+.contacts-list__item {
+  line-height: 20px;
+
+  @media (min-width: $wide-desktop-width) {
+    line-height: 23px;
+  }
+}
+
+.contacts-list__name {
+  font-size: 11px;
+  font-weight: 500;
+  color: $light-grey;
+
+  @media (min-width: $wide-desktop-width) {
+    font-size: 12px;
+  }
+}
+
+.contacts-list__value {
+  margin-left: 0;
+
+  font-size: 15px;
+
+  @media (min-width: $wide-desktop-width) {
+    font-size: 16px;
+  }
+}

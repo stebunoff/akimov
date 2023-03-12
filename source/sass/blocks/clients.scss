@@ -1,6 +1,13 @@
-.clients {}
+.clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 30px;
+}
 
 .clients__headline {
+  margin-bottom: 30px;
+
   font-size: 22px;
   line-height: 30px;
   font-weight: 700;

@@ -1,7 +1,6 @@
 .accreditation {
   font-size: 10px;
   line-height: 12px;
-  color: $red;
 
   @media (min-width: $tablet-width) {
     font-size: 12px;
@@ -11,4 +10,8 @@
   @media (min-width: $wide-desktop-width) {
     font-size: 14px;
   }
+}
+
+.accreditation__link {
+  color: $red;
 }

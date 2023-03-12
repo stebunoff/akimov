@@ -1,4 +1,15 @@
-.manager {}
+.manager {
+  display: flex;
+}
+
+.offer__wrapper .manager {
+  padding-top: 20px;
+}
+
+.manager__text {
+  display: flex;
+  flex-direction: column;
+}
 
 .manager__name {
   font-size: 15px;

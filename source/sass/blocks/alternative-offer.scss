@@ -1,4 +1,16 @@
-.alternative-offer {}
+.alternative-offer {
+  padding: 20px 30px;
+
+  background-color: $background-offer;
+}
+
+.alternative-offer__wrapper {
+  margin-bottom: 50px;
+}
+
+.alternative-offer .button {
+  margin-bottom: 20px;
+}
 
 .alternative-offer__headline {
   font-size: 19px;

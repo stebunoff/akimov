@@ -1,3 +1,11 @@
+.types {
+  padding: 0 15px 0 15px;
+}
+
+.types__wrapper {
+  margin-bottom: 40px;
+}
+
 .types-list {
   @include list-reset;
 }
