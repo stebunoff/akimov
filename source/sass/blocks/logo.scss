@@ -1,20 +1,21 @@
 .logo {
   display: flex;
   flex-direction: column;
-}
-
-.logo__descriptor {
-  font-size: 13px;
-  line-height: 15px;
-  font-weight: 700;
 
   @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 21px;
+    flex-direction: row;
+  }
+}
+
+.logo__image {
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-right: 32px;
   }
 
   @media (min-width: $wide-desktop-width) {
-    font-size: 20px;
-    line-height: 26px;
+    margin-right: 27px;
   }
 }

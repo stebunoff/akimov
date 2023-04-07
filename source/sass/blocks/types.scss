@@ -1,9 +1,19 @@
 .types {
-  padding: 0 15px 0 15px;
-}
+  padding-bottom: 39px;
 
-.types__wrapper {
-  margin-bottom: 40px;
+  border-bottom: 1px solid $grey90;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 39px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    padding-bottom: 50px;
+  }
 }
 
 .types-list {

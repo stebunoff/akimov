@@ -1,23 +1,60 @@
-.advantages .advantages-points {
-  padding: 30px 15px;
+.advantages__wrapper .advantages-points {
+  @media (min-width: $desktop-width) {
+    margin-right: 61px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    margin-right: 234px;
+  }
+}
+
+.advantages-points {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 280fr 310fr;
+    gap: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    gap: 35px;
+  }
 }
 
 .advantages-points__point {
+  margin: 0;
+
   font-size: 19px;
   line-height: 25px;
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+
     font-size: 20px;
     line-height: 27px;
   }
 
   @media (min-width: $desktop-width) {
+    gap: 54px;
+
     font-size: 24px;
     line-height: 32px;
   }
 
   @media (min-width: $wide-desktop-width) {
+    max-width: 315px;
+
     font-size: 30px;
     line-height: 38px;
   }

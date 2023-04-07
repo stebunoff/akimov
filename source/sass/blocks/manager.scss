@@ -1,17 +1,51 @@
 .manager {
   display: flex;
+
+  background-image: url('../img/seal.svg');
+  background-repeat: no-repeat;
 }
 
-.offer__wrapper .manager {
-  padding-top: 20px;
+.offer .manager {
+  min-height: 80px;
+  padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 95px;
+
+    background-size: 80px;
+  }
+}
+
+.alternative-offer .manager {
+  background-position-x: 30px;
+  background-position-y: 2px;
+
+  @media (min-width: $desktop-width) {
+    background-size: 100px;
+    background-position-x: 50px;
+    background-position-y: 4px;
+  }
 }
 
 .manager__text {
   display: flex;
   flex-direction: column;
+  padding-top: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 12px;
+  }
+}
+
+.alternative-offer .manager__text {
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+  }
 }
 
 .manager__name {
+  margin-bottom: 4px;
+
   font-size: 15px;
   line-height: 17px;
   font-weight: 500;
@@ -21,4 +55,28 @@
   font-size: 15px;
   line-height: 18px;
   color: $dark-grey;
+}
+
+.manager__job-title .br {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.manager__image {
+  width: 73px;
+  height: 73px;
+  margin-right: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 77px;
+    height: 77px;
+    padding-top: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 105px;
+    height: 105px;
+    margin-right: 63px;
+  }
 }

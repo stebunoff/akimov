@@ -1,6 +1,17 @@
 .contacts__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px 38px;
-  margin-bottom: 32px;
+  grid-template-columns: 123px 123px;
+  gap: 33px 27px;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 58px;
+  }
 }

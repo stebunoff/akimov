@@ -1,6 +1,26 @@
 .page-header {
+  @media (min-width: $tablet-width) {
+   border-bottom: 1px solid $grey90;
+  }
+}
+
+.page-header__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 20px 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 56px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    padding-top: 32px;
+    padding-bottom: 21px;
+  }
 }

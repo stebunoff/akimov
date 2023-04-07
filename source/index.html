@@ -12,43 +12,57 @@
 
 <body class="body">
   <header class="page-header">
-    <div>
+    <div class="page-header__wrapper container">
       <div class="logo">
-        <img class="image" src="img/logo.svg" width="150" height="18" alt="Логотип ООО «ТЕХБЕЗОПАСНОСТЬ»">
-        <span class="logo__descriptor">Аккредитованный <br>орган по сертификации</span>
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg" width="173" height="82">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="127" height="60">
+          <img class="logo__image" src="img/logo-mobile.svg" width="150" height="18"
+            alt="Логотип ООО «ТЕХБЕЗОПАСНОСТЬ»">
+        </picture>
+        <div class="accreditation">
+          <span class="accreditation__text">Аккредитованный <br>орган по сертификации</span>
+          <div>
+            <a class="accreditation__link link" href="">RA.RU.11HA65</a>
+            <span>·</span>
+            <a class="accreditation__link link" href="">RA.RU.21HB54</a>
+          </div>
+        </div>
       </div>
-      <div class="accreditation">
-        <a class="accreditation__link" href="">RA.RU.11HA65</a>
-        <a class="accreditation__link" href="">RA.RU.21HB54</a>
-      </div>
+      <address class="phones">
+        <a class="phones__item link" href="tel:+74956779678">+7 495 677 9678</a>
+        <a class="phones__item link" href="tel:+79636762839">+7 963 676 2839</a>
+      </address>
     </div>
-    <address class="phones">
-      <a class="phones__item" href="tel:+74956779678">+7 495 677 9678</a>
-      <a class="phones__item" href="tel:+79636762839">+7 963 676 2839</a>
-    </address>
   </header>
   <main>
     <section class="offer">
-      <div class="offer__wrapper">
-        <img class="image" src="img/akimov.jpg" alt="Юрий Акимов">
-        <hgroup>
-          <h1 class="offer__headline">Проводим испытания и оформляем сертификаты соответствия на медицинское
-            оборудование
-          </h1>
-          <p class="offer__subheadline">Работаем оперативно и без посредников</p>
-        </hgroup>
-        <button class="button">Рассчитать стоимость и сроки</button>
-        <div class="manager">
-          <img src="img/avatar.png" width="74" height="74" alt="Юрий Акимов">
-          <div class="manager__text">
-            <span class="manager__name">Юрий Акимов</span>
-            <span class="manager__job-title">Ваш персональный менеджер <br>по сертификации</span>
+      <div class="offer__wrapper container">
+        <picture class="offer__picture">
+          <source media="(min-width: 1280px)" srcset="img/akimov.jpg" width="550" height="430">
+          <source media="(min-width: 1024px)" srcset="img/akimov.jpg" width="439" height="343">
+          <source media="(min-width: 768px)" srcset="img/akimov.jpg" width="320" height="268">
+          <img class="image offer__image" src="img/akimov.jpg" width="330" height="230" alt="Юрий Акимов">
+        </picture>
+        <div class="offer__text">
+          <hgroup>
+            <h1 class="offer__headline">Проводим испытания и оформляем сертификаты соответствия на медицинское
+              оборудование
+            </h1>
+            <p class="offer__subheadline">Работаем оперативно и без посредников</p>
+          </hgroup>
+          <button class="button button--cta">Рассчитать стоимость и сроки</button>
+          <div class="manager">
+            <div class="manager__text">
+              <span class="manager__name">Юрий Акимов</span>
+              <span class="manager__job-title">Ваш персональный менеджер <br>по сертификации</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="advantages">
-      <div class="advantages__wrapper">
+      <div class="advantages__wrapper container">
         <h2 class="visually-hidden">Преимущества компании</h2>
         <div class="advantages-points">
           <p class="advantages-points__point"><span class="advantages-points__point--accent">Работаем с 2007 года</span>
@@ -70,53 +84,114 @@
       </div>
     </section>
     <section class="types">
-      <div class="types__wrapper">
+      <div class="container">
         <h2 class="visually-hidden">Типы сертификатов</h2>
         <ul class="types-list">
-          <li class="types-list__item"><img class="types-list__image" src="img/sign-eu.svg" width="43" height="30"
+          <li class="types-list__item"><img class="types-list__image types-list__image--eu" src="img/sign-eu.svg" width="43" height="30"
               alt="Знак соответствия стандартам качества ЕС">Соответствие изделий стандартам ЕС</li>
-          <li class="types-list__item"><img class="types-list__image" src="img/sign-rf.svg" width="39" height="30"
+          <li class="types-list__item"><img class="types-list__image types-list__image--rf" src="img/sign-rf.svg" width="39" height="30"
               alt="Знак соответствия стандартам качества РФ">Соответствие изделий стандартам в РФ</li>
-          <li class="types-list__item"><img class="types-list__image" src="img/sign-eac.svg" width="35" height="30"
+          <li class="types-list__item"><img class="types-list__image types-list__image--eac" src="img/sign-eac.svg" width="35" height="30"
               alt="Знак соответствия стандартам качества ЕАЭС">Соответствие изделий стандартам ЕАЭС</li>
         </ul>
       </div>
     </section>
     <section class="clients">
-      <h2 class="clients__headline">Клиенты нас рекомендуют</h2>
-      <ul class="clients-list">
-        <li class="clients-list__item"><a href="">Вариконд</a></li>
-        <li class="clients-list__item"><a href="">Газхолодтехника</a></li>
-        <li class="clients-list__item"><a href="">ЗАО «ДС Контролз»</a></li>
-        <li class="clients-list__item"><a href="">ЗАО «ИЦ АСИ»</a></li>
-        <li class="clients-list__item"><a href="">Пожгазприбор</a></li>
-        <li class="clients-list__item"><a href="">НЭЗ Тайра</a></li>
-        <li class="clients-list__item"><a href="">РИСТ</a></li>
-        <li class="clients-list__item"><a href="">МГК Световые технологии</a></li>
-      </ul>
-      <button class="button button--show-more">Показать ещё</button>
+      <div class="clients__wrapper container">
+        <h2 class="clients__headline">Клиенты нас рекомендуют</h2>
+        <ul class="clients-list">
+          <li class="clients-list__item">
+            <div class="clients-list__item-wrapper"><img class="clients-list__item-image"
+                src="img/reviews/armtel-thumbnail.webp" width="190" height="140"
+                alt="Отзыв компании ООО «Вариконд» для ООО «ТЕХБЕЗОПАСНОСТЬ»"><button class="clients-list__button"><span
+                  class="visually-hidden">Увеличить</span></button></div>Вариконд
+          </li>
+          <li class="clients-list__item">
+            <div class="clients-list__item-wrapper"><img class="clients-list__item-image"
+                src="img/reviews/atehks-ehlektro-thumbnail.webp" width="190" height="140"
+                alt="Отзыв компании ООО «АТЭКС-электро» для ООО «ТЕХБЕЗОПАСНОСТЬ»"><button
+                class="clients-list__button"><span class="visually-hidden">Увеличить</span></button></div>
+            Газхолодтехника
+          </li>
+          <li class="clients-list__item">
+            <div class="clients-list__item-wrapper"><img class="clients-list__item-image"
+                src="img/reviews/avtosfera-thumbnail.webp" width="190" height="140"
+                alt="Отзыв компании ООО «Автосфера» для ООО «ТЕХБЕЗОПАСНОСТЬ»"><button
+                class="clients-list__button"><span class="visually-hidden">Увеличить</span></button></div>ЗАО «ДС
+            Контролз»
+          </li>
+          <li class="clients-list__item">
+            <div class="clients-list__item-wrapper"><img class="clients-list__item-image"
+                src="img/reviews/ehlektrometall-thumbnail.webp" width="190" height="140"
+                alt="Отзыв компании Elektrometal для ООО «ТЕХБЕЗОПАСНОСТЬ»"><button class="clients-list__button"><span
+                  class="visually-hidden">Увеличить</span></button></div>ЗАО «ИЦ АСИ»
+          </li>
+          <li class="clients-list__item">
+            <div class="clients-list__item-wrapper"><img class="clients-list__item-image"
+                src="img/reviews/ksb-os-thumbnail.webp" width="190" height="140"
+                alt="Отзыв компании ООО «КСБ» для ООО «ТЕХБЕЗОПАСНОСТЬ»"><button class="clients-list__button"><span
+                  class="visually-hidden">Увеличить</span></button></div>Пожгазприбор
+          </li>
+          <li class="clients-list__item clients-list__item--hidden">
+            <div class="clients-list__item-wrapper"><img class="clients-list__item-image"
+                src="img/reviews/npc-atb-thumbnail.webp" width="190" height="140"
+                alt="Отзыв компании ООО «НПЦ АТБ» для ООО «ТЕХБЕЗОПАСНОСТЬ»"><button class="clients-list__button"><span
+                  class="visually-hidden">Увеличить</span></button></div>НЭЗ Тайра
+          </li>
+          <li class="clients-list__item clients-list__item--hidden">
+            <div class="clients-list__item-wrapper"><img class="clients-list__item-image"
+                src="img/reviews/riat-thumbnail.webp" width="190" height="140"
+                alt="Отзыв компании ОАО «Риат» для ООО «ТЕХБЕЗОПАСНОСТЬ»"><button class="clients-list__button"><span
+                  class="visually-hidden">Увеличить</span></button></div>РИСТ
+          </li>
+          <li class="clients-list__item clients-list__item--hidden">
+            <div class="clients-list__item-wrapper"><img class="clients-list__item-image"
+                src="img/reviews/sev-evrodrajf-thumbnail.webp" width="190" height="140"
+                alt="Отзыв компании АО «СЕВ-ЕВРОДРАЙФ» для ООО «ТЕХБЕЗОПАСНОСТЬ»"><button
+                class="clients-list__button"><span class="visually-hidden">Увеличить</span></button></div>МГК Световые
+            технологии
+          </li>
+          <li class="clients-list__item clients-list__item--hidden">
+            <div class="clients-list__item-wrapper"><img class="clients-list__item-image"
+                src="img/reviews/sudosvet-thumbnail.webp" width="190" height="140"
+                alt="Отзыв компании ООО «СудоСвет» для ООО «ТЕХБЕЗОПАСНОСТЬ»"><button class="clients-list__button"><span
+                  class="visually-hidden">Увеличить</span></button></div>МГК Световые технологии
+          </li>
+          <li class="clients-list__item clients-list__item--hidden">
+            <div class="clients-list__item-wrapper"><img class="clients-list__item-image"
+                src="img/reviews/svetovye-tekhnologii-thumbnail.webp" width="190" height="140"
+                alt="Отзыв компании ООО «МГК Световые Технологии» для ООО «ТЕХБЕЗОПАСНОСТЬ»"><button
+                class="clients-list__button"><span class="visually-hidden">Увеличить</span></button></div>МГК Световые
+            технологии
+          </li>
+        </ul>
+        <button class="button clients__button">Показать ещё</button>
+      </div>
     </section>
     <section class="alternative-offer">
       <div class="alternative-offer__wrapper">
-        <h2 class="alternative-offer__headline">За 2 дня бесплатно проверим и оценим ваши документы на вероятность
-          отказа
-        </h2>
-        <button class="button button--alternative">Заказать обратный звонок</button>
+        <div class="alternative-offer__container">
+          <h2 class="alternative-offer__headline">За 2 дня бесплатно проверим и оценим ваши документы на вероятность
+            отказа
+          </h2>
+          <button class="button button--alternative">Заказать обратный звонок</button>
+        </div>
         <div class="manager">
-          <img src="img/avatar.png" width="74" height="74" alt="Юрий Акимов">
+          <img class="manager__image" src="img/avatar.png" width="73" height="73" alt="Юрий Акимов">
           <div class="manager__text">
             <span class="manager__name">Юрий Акимов</span>
-            <span class="manager__job-title">Ваш персональный менеджер <br>по сертификации</span>
+            <span class="manager__job-title">Ваш персональный <br class="br">менеджер по сертификации</span>
           </div>
         </div>
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper container">
       <div class="logo-text">
-        <img class="image" src="img/logo-text.svg" width="150" height="16" alt="Логотип ООО «ТЕХБЕЗОПАСНОСТЬ»">
-        <span class="logo-text__descriptor">Аккредитованный <br>орган по сертификации</span>
+        <img class="logo-text__logo" src="img/logo-text.svg" width="150" height="16"
+          alt="Логотип ООО «ТЕХБЕЗОПАСНОСТЬ»">
+        <span class="logo-text__descriptor">Аккредитованный <br class="br">орган по сертификации</span>
       </div>
       <section class="contacts">
         <div class="contacts__wrapper">
@@ -136,19 +211,22 @@
           <address class="contacts__item">
             <dl class="contacts-list">
               <dt class="contacts-list__name">Телефоны</dt>
-              <dd class="contacts-list__value"><a href="tel:+74956779678">+7 495 677 9678</a></dd>
-              <dd class="contacts-list__value"><a href="tel:+79636762839">+7 963 676 2839</a></dd>
+              <dd class="contacts-list__value"><a class="contacts-list__link link" href="tel:+74956779678">+7 495 677
+                  9678</a></dd>
+              <dd class="contacts-list__value"><a class="contacts-list__link link" href="tel:+79636762839">+7 963 676
+                  2839</a></dd>
             </dl>
           </address>
           <address class="contacts__item">
             <dl class="contacts-list">
               <dt class="contacts-list__name">Почта</dt>
-              <dd class="contacts-list__value"><a href="mailto:ju.akimov@thbz.ru">ju.akimov@thbz.ru</a></dd>
+              <dd class="contacts-list__value"><a class="contacts-list__link link"
+                  href="mailto:ju.akimov@thbz.ru">ju.akimov@thbz.ru</a></dd>
             </dl>
           </address>
         </div>
       </section>
-      <a class="link" href="sitemap.html">Карта сайта</a>
+      <a class="link link--sitemap" href="sitemap.html">Карта сайта</a>
     </div>
   </footer>
   <div class="popup">

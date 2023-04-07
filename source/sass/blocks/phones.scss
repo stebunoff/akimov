@@ -1,17 +1,25 @@
 .phones {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  padding-top: 4px;
 
   font-size: 13px;
+  font-style: normal;
   line-height: 15px;
   font-weight: 500;
 
   @media (min-width: $tablet-width) {
+    gap: 5px;
+    padding-top: 9px;
+
     font-size: 15px;
     line-height: 21px;
   }
 
   @media (min-width: $wide-desktop-width) {
+    padding-top: 21px;
+
     font-size: 20px;
     line-height: 26px;
   }
@@ -19,6 +27,7 @@
 
 .phones__item {
   color: $black;
+  letter-spacing: 0.26px;
 
   text-decoration: none;
 }

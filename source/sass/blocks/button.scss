@@ -1,3 +1,15 @@
+.offer .button--cta {
+  margin-bottom: 29px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    margin-bottom: 72px;
+  }
+}
+
 .button {
   font-size: 12px;
   line-height: 18px;
@@ -5,6 +17,7 @@
   color: $white;
 
   background-color: $cta;
+  border: none;
 
   @media (min-width: $desktop-width) {
     font-size: 13px;
@@ -15,7 +28,40 @@
     line-height: 20px;
   }
 
+  &:hover,
+  &:focus {
+    background-color: $btn-hover;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: $btn-active;
+  }
+
+  &--cta {
+    min-height: 37px;
+    min-width: 261px;
+    padding: 9.5px 15px;
+
+    text-transform: uppercase;
+    letter-spacing: 0.36px;
+
+    @media (min-width: $desktop-width) {
+      min-height: 40px;
+      min-width: 280px;
+    }
+
+    @media (min-width: $wide-desktop-width) {
+      min-width: 310px;
+      min-height: 46px;
+    }
+  }
+
   &--alternative {
+    width: 218px;
+    min-height: 37px;
+    padding-bottom: 2px;
+
     font-size: 15px;
     line-height: 20px;
     font-weight: 500;
@@ -25,21 +71,17 @@
     }
 
     @media (min-width: $desktop-width) {
+      width: 242px;
+      min-height: 40px;
+
       font-size: 17px;
     }
 
     @media (min-width: $wide-desktop-width) {
+      width: 255px;
+      min-height: 46px;
+
       font-size: 18px;
     }
-  }
-
-  &--show-more {
-    font-size: 15px;
-    line-height: 19px;
-    font-weight: 400;
-    color: #808080;
-
-    background-color: transparent;
-    border: 1px solid $grey80;
   }
 }

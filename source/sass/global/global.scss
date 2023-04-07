@@ -22,3 +22,20 @@
   height: auto;
   margin: 0;
 }
+
+.container {
+  width: 330px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 720px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    width: 1200px;
+  }
+}

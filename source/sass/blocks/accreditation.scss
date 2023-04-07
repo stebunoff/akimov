@@ -8,10 +8,42 @@
   }
 
   @media (min-width: $wide-desktop-width) {
+    padding-top: 7px;
+
     font-size: 14px;
+  }
+}
+
+.accreditation__text {
+  display: block;
+  margin-bottom: 5px;
+
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 7px;
+
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    margin-bottom: 12px;
+
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
 .accreditation__link {
   color: $red;
+  letter-spacing: 0.1px;
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: 0.24px;
+  }
+
+  text-decoration: none;
 }

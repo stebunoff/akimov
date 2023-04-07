@@ -1,28 +1,92 @@
 .offer {
-  padding: 0 15px 15px;
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    padding-top: 40px;
+  }
 }
 
 .offer__wrapper {
-  margin-bottom: 53px;
+  margin-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-bottom: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    margin-bottom: 42px;
+  }
+}
+
+.offer__picture {
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
+  }
+}
+
+.offer__image {
+  margin-bottom: 15px;
+  height: 230px;
+
+  object-fit: cover;
+  object-position: left top;
+  border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 320px;
+    height: 268px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 439px;
+    height: 343px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    width: 550px;
+    height: 480px;
+    margin-right: 10px;
+  }
 }
 
 .offer__headline {
+  margin-top: 0;
+  margin-bottom: 4px;
+
   font-size: 22px;
   line-height: 30px;
   font-weight: 700;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
   @media (min-width: $desktop-width) {
+    margin-bottom: 4px;
+
     font-size: 27px;
     line-height: 37px;
   }
 
   @media (min-width: $wide-desktop-width) {
+    margin-bottom: 6px;
+
     font-size: 35px;
     line-height: 44px;
   }
 }
 
 .offer__subheadline {
+  margin-top: 0;
+  margin-bottom: 20px;
+
   font-size: 19px;
   line-height: 26px;
 
@@ -31,7 +95,19 @@
   }
 
   @media (min-width: $wide-desktop-width) {
+    margin-bottom: 26px;
+
     font-size: 22px;
     line-height: 30px;
+  }
+}
+
+.offer__text {
+  @media (min-width: $desktop-width) {
+    padding-top: 21px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    padding-top: 30px;
   }
 }

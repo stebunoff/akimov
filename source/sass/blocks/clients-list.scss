@@ -2,18 +2,43 @@
   @include list-reset;
 
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    gap: 40px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 40px 26px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    gap: 50px 40px;
+  }
+}
+
+.clients .clients-list {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .clients-list__item {
-  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
 
   font-size: 15px;
   line-height: 19px;
   color: $grey;
 
   @media (min-width: $tablet-width) {
+    width: 220px;
     font-size: 16px;
     line-height: 21px;
   }
@@ -21,5 +46,55 @@
   @media (min-width: $wide-desktop-width) {
     font-size: 18px;
     line-height: 25px;
+  }
+
+  &--hidden {
+    @media (max-width: 767px) {
+      @include visually-hidden;
+    }
+  }
+}
+
+.clients-list__item-wrapper {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 300px;
+  height: 160px;
+  margin-bottom: 10px;
+
+  background-color: $background-reviews;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 220px;
+    min-height: 200px;
+    margin-bottom: 18px;
+  }
+}
+
+.clients-list__button {
+  position: absolute;
+  bottom: 9.5px;
+  right: 34.5px;
+
+  width: 17.49px;
+  height: 19.46px;
+
+  background-image: url('../img/magnifier.svg');
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.clients-list__item-image {
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    height: 170px;
   }
 }

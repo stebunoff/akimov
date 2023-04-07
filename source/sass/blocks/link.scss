@@ -1,7 +1,27 @@
 .link {
-  font-size: 15px;
-  line-height: 20px;
-  color: $cta;
-
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $link-focus;
+  }
+
+  &:active {
+    color: $red;
+  }
+
+  &--sitemap {
+    font-size: 15px;
+    line-height: 20px;
+    color: $cta;
+
+    @media (min-width: $tablet-width) {
+    margin-top: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: auto;
+      margin-top: 17px;
+    }
+    }
 }

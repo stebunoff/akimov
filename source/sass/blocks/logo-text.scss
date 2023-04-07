@@ -1,5 +1,31 @@
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-footer .logo-text {
-  margin-bottom: 49px;
+  margin-bottom: 52px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 31px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 50px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    margin-right: 139px;
+  }
+}
+
+.logo-text__logo {
+  margin-bottom: 5px;
+
+  @media (min-width: $wide-desktop-width) {
+    margin-bottom: 7px;
+  }
 }
 
 .logo-text__descriptor {
@@ -9,5 +35,13 @@
   @media (min-width: $wide-desktop-width) {
     font-size: 15px;
     line-height: 19px;
+  }
+}
+
+.logo-text__descriptor .br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
